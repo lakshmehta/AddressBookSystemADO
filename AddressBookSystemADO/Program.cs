@@ -21,7 +21,7 @@ namespace AddressBookSystemADO
              data.city = "Bhopal";
              data.state = "Madhya Pradesh";
              data.email = "Neha432@gmail.com";
-             data.addressbook_name = "AddressBook1";
+             data.addressbook_name = "AddressBook1";s
              data.addressbook_type = "Professional";
              check.EditContactUsingPersonName(data);
 
@@ -33,7 +33,8 @@ namespace AddressBookSystemADO
 
             //check.RetrievePersonFromPErticulatCityOrState();
 
-            check.AddressBookSizeByCityANDState();
+            //check.AddressBookSizeByCityANDState();
+            check.SortPersonNameByCity();
         }
     }
 }
