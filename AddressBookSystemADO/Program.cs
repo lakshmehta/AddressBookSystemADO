@@ -34,7 +34,8 @@ namespace AddressBookSystemADO
             //check.RetrievePersonFromPErticulatCityOrState();
 
             //check.AddressBookSizeByCityANDState();
-            check.SortPersonNameByCity();
+            //check.SortPersonNameByCity();
+            check.GetNumberOfPersonsCountByType();
         }
     }
 }
