@@ -16,7 +16,7 @@ namespace AddressBookSystemADO
            
             AddressBookModel data = new AddressBookModel();
 
-            data.first_name = "Neha";
+           /* data.first_name = "Neha";
             data.last_name = "Gupta";
             data.city = "Bhopal";
             data.state = "Madhya Pradesh";
@@ -28,6 +28,10 @@ namespace AddressBookSystemADO
 
             data.first_name = "poonam";
             check.DeleteContactUsingName(data);
+           */
+
+
+            check.RetrievePersonFromPErticulatCityOrState();
         }
     }
 }
