@@ -16,22 +16,24 @@ namespace AddressBookSystemADO
            
             AddressBookModel data = new AddressBookModel();
 
-           /* data.first_name = "Neha";
-            data.last_name = "Gupta";
-            data.city = "Bhopal";
-            data.state = "Madhya Pradesh";
-            data.email = "Neha432@gmail.com";
-            data.addressbook_name = "AddressBook1";
-            data.addressbook_type = "Professional";
-            check.EditContactUsingPersonName(data);
+            /* data.first_name = "Neha";
+             data.last_name = "Gupta";
+             data.city = "Bhopal";
+             data.state = "Madhya Pradesh";
+             data.email = "Neha432@gmail.com";
+             data.addressbook_name = "AddressBook1";
+             data.addressbook_type = "Professional";
+             check.EditContactUsingPersonName(data);
 
 
-            data.first_name = "poonam";
-            check.DeleteContactUsingName(data);
-           */
+             data.first_name = "poonam";
+             check.DeleteContactUsingName(data);
+            */
 
 
-            check.RetrievePersonFromPErticulatCityOrState();
+            //check.RetrievePersonFromPErticulatCityOrState();
+
+            check.AddressBookSizeByCityANDState();
         }
     }
 }
