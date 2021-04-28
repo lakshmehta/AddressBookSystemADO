@@ -1,0 +1,7 @@
+F:\AddressBookSystemADO\AddressBookSystemADO\bin\Debug\AddressBookSystemADO.exe.config
+F:\AddressBookSystemADO\AddressBookSystemADO\bin\Debug\AddressBookSystemADO.exe
+F:\AddressBookSystemADO\AddressBookSystemADO\bin\Debug\AddressBookSystemADO.pdb
+F:\AddressBookSystemADO\AddressBookSystemADO\obj\Debug\AddressBookSystemADO.csprojAssemblyReference.cache
+F:\AddressBookSystemADO\AddressBookSystemADO\obj\Debug\AddressBookSystemADO.csproj.CoreCompileInputs.cache
+F:\AddressBookSystemADO\AddressBookSystemADO\obj\Debug\AddressBookSystemADO.exe
+F:\AddressBookSystemADO\AddressBookSystemADO\obj\Debug\AddressBookSystemADO.pdb
