@@ -13,6 +13,8 @@ namespace AddressBookSystemADO
             Console.WriteLine("Welcome to Address Book ADO.NET");
             AddressBookMain check = new AddressBookMain();
             check.CheckConnection();
+            AddressBookMain main = new AddressBookMain();
+            main.CreateTable();
         }
     }
 }
