@@ -11,6 +11,8 @@ namespace AddressBookSystemADO
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Address Book ADO.NET");
+            AddressBookMain check = new AddressBookMain();
+            check.CheckConnection();
         }
     }
 }
