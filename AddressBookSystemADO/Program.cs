@@ -16,10 +16,6 @@ namespace AddressBookSystemADO
            
             AddressBookModel data = new AddressBookModel();
 
-
-
-
-
             data.first_name = "Neha";
             data.last_name = "Gupta";
             data.city = "Bhopal";
@@ -28,6 +24,10 @@ namespace AddressBookSystemADO
             data.addressbook_name = "AddressBook1";
             data.addressbook_type = "Professional";
             check.EditContactUsingPersonName(data);
+
+
+            data.first_name = "poonam";
+            check.DeleteContactUsingName(data);
         }
     }
 }
