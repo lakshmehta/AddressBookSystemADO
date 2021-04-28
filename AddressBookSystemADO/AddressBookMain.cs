@@ -189,6 +189,47 @@ namespace AddressBookSystemADO
                 connection.Close();
             }
         }
-
+        public void AddressBookSizeByCityANDState()
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            try
+            {
+                using (connection)
+                {
+                    using (SqlCommand command = new SqlCommand(
+                        @"SELECT COUNT(first_name) FROM AddreshBookADo WHERE city = 'Rishikesh' AND state = 'UK'; 
+                        SELECT COUNT(first_name) FROM AddreshBookADo WHERE city = 'Ruderpryag' AND state = 'UP';", connection))
+                    {
+                        connection.Open();
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var count = reader.GetInt32(0);
+                                Console.WriteLine($"Number of Persons belonging to City 'Rishikesh' And State 'Uk' : {count}");
+                                Console.WriteLine("\n");
+                            }
+                            if (reader.NextResult())
+                            {
+                                while (reader.Read())
+                                {
+                                    var count = reader.GetInt32(0);
+                                    Console.WriteLine($"Number of Persons belonging to City 'Ruderpryag' And State 'UP' : {count}");
+                                    Console.WriteLine("\n");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
     }
 }
