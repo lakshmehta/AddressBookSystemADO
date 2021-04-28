@@ -13,8 +13,21 @@ namespace AddressBookSystemADO
             Console.WriteLine("Welcome to Address Book ADO.NET");
             AddressBookMain check = new AddressBookMain();
             check.CheckConnection();
-            AddressBookMain main = new AddressBookMain();
-            main.CreateTable();
+           
+            AddressBookModel data = new AddressBookModel();
+
+
+
+
+
+            data.first_name = "Neha";
+            data.last_name = "Gupta";
+            data.city = "Bhopal";
+            data.state = "Madhya Pradesh";
+            data.email = "Neha432@gmail.com";
+            data.addressbook_name = "AddressBook1";
+            data.addressbook_type = "Professional";
+            check.EditContactUsingPersonName(data);
         }
     }
 }
